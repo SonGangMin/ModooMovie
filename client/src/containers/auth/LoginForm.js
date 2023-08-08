@@ -61,7 +61,7 @@ const LoginForm = () => {
       return;
     }
     if (auth) {
-      dispatch(check({}));
+      dispatch(check());
     }
   }, [auth, authError, dispatch]);
 
@@ -71,12 +71,12 @@ const LoginForm = () => {
       try {
         localStorage.setItem("user", JSON.stringify(user));
       } catch (e) {
-        console.log("로칼스토리지는 일안하는중~");
+        // console.log("로칼스토리지는 일안하는중~");
+        console.error(error);
       }
       navigate(from);
     }
   }, [navigate, user, location.state]);
-  
 
   return (
     <div>

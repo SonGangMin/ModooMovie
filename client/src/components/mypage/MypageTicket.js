@@ -28,15 +28,15 @@ const MyticketWrap = styled.div`
     }
     .infoList {
       position: relative;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       &.last {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
       }
-      &.on{
-        &:after{
-            width: 11px;
-            height: 11px;
-            border: 6px solid #ff243e;
+      &.on {
+        &:after {
+          width: 11px;
+          height: 11px;
+          border: 6px solid #ff243e;
         }
       }
       &:after {
@@ -294,7 +294,10 @@ const MypageTicket = () => {
                     : null;
 
                 const lastList =
-                  prevDate === currentDate && nextDate !== currentDate;
+                  (prevDate !== currentDate && nextDate !== currentDate) ||
+                  (prevDate === currentDate &&
+                    nextDate !== currentDate &&
+                    index === array.length - 1);
 
                 return (
                   <li
