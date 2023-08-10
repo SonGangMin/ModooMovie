@@ -47,7 +47,8 @@ const HeaderBlock = styled.div`
 `;
 
 const NavWrap = styled.div`
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100%;
   &.fixed {
     position: fixed;
@@ -57,7 +58,7 @@ const NavWrap = styled.div`
   }
 `;
 
-const Wrapper = styled(Responsive)`
+const Wrapper = styled.div`
   position: relative;
   width: 520px;
   height: 55px;
@@ -175,7 +176,8 @@ const LogoWrapper = styled(Responsive)`
     align-items: center;
     justify-content: space-between;
 
-    button, a{
+    button,
+    a {
       background: none;
       color: #000;
       padding: 0;
@@ -187,10 +189,10 @@ const LogoWrapper = styled(Responsive)`
 `;
 
 const Logo = styled.img`
-position: absolute;
-left: 50%;
-top: 40%;
-transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
   height: 5rem;
   margin-top: 0.6rem;
 `;

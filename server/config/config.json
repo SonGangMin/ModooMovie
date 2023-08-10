@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "edurootroot",
-    "database": "ModoosMovie",
+    "database": "modoosmovie",
     "host": "db",
     "dialect": "mysql",
     "timezone": "+09:00"
@@ -10,7 +10,7 @@
   "test": {
     "username": "root",
     "password": "edurootroot",
-    "database": "ModoosMovie",
+    "database": "modoosmovie",
     "host": "db",
     "dialect": "mysql",
     "timezone": "+09:00"
@@ -18,7 +18,7 @@
   "production": {
     "username": "root",
     "password": "edurootroot",
-    "database": "ModoosMovie",
+    "database": "modoosmovie",
     "host": "db",
     "dialect": "mysql",
     "timezone": "+09:00"
