@@ -16,4 +16,4 @@ COPY . .
 RUN chmod +x docker-entrypoint.sh
 ENTRYPOINT ./docker-entrypoint.sh
 
-EXPOSE 8080
+EXPOSE 3000
