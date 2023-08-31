@@ -189,9 +189,11 @@ const SelectTime = () => {
     const groupedMovies = {};
 
     time.forEach((item) => {
-      const key = `${item.age} ${item.movie_name}`;
+      const key = `${item.age} ${item.movie_name} ${item.cinema}`;
+      // console.log("item==", item, "key=-==", key);
       if (!groupedMovies[key]) {
         groupedMovies[key] = {
+          age: item.age,
           cinema: item.cinema,
           disp: item.disp,
           language: item.language,
@@ -210,6 +212,7 @@ const SelectTime = () => {
     const sameDateTime = time.filter((item) => item.date === data.date);
 
     if (data.cinema && data.date && !data.movie) {
+      console.log("ㅋㅋㅋ", groupedMovies);
       const filteredMovies = Object.entries(groupedMovies).filter(
         ([key, { cinema }]) => cinema === data.cinema
       );

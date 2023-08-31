@@ -2,24 +2,27 @@
   "development": {
     "username": "root",
     "password": "edurootroot",
-    "database": "modoosmovie",
-    "host": "db",
+    "database": "ModoosMovie",
+    "host": "docs.yi.or.kr",
+    "port": 9086,
     "dialect": "mysql",
     "timezone": "+09:00"
   },
   "test": {
     "username": "root",
     "password": "edurootroot",
-    "database": "modoosmovie",
-    "host": "db",
+    "database": "ModoosMovie",
+    "host": "docs.yi.or.kr",
+    "port": 9086,
     "dialect": "mysql",
     "timezone": "+09:00"
   },
   "production": {
     "username": "root",
     "password": "edurootroot",
-    "database": "modoosmovie",
-    "host": "db",
+    "database": "ModoosMovie",
+    "host": "docs.yi.or.kr",
+    "port": 9086,
     "dialect": "mysql",
     "timezone": "+09:00"
   }
