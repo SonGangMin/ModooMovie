@@ -284,8 +284,18 @@ const SelectTime = () => {
     }
 
     if (data.cinema && data.date && data.movie) {
-      const key = `${data.movie.age} ${data.movie.movie_name}`;
+      const key = `${data.movie.age} ${data.movie.movie_name} ${data.cinema}`;
       const movie = groupedMovies[key];
+      console.log(
+        "key===",
+        key,
+        "movie===",
+        movie,
+        "data===",
+        data.cinema,
+        "groupedMovies===========",
+        groupedMovies
+      );
 
       if (movie && movie.cinema === data.cinema) {
         const filteredShowtimesSameDateTime = movie.showtimes.filter((item) => {
